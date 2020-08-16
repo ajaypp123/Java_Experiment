@@ -1,0 +1,92 @@
+# JSP Content
+
+
+- Intro
+    - Life cycle
+        - Init
+        - Destroy
+        - __serverJSP
+- Tag
+    - scriptlet tag
+    - expression tag
+    - declaration tag
+- Object
+    - out: JspWriter
+    - request: HttpServletRequest
+    - response: HttpServletResponse
+    - config: ServletConfig
+    - application: ServletContext
+    - session: HttpSession
+    - pageContext: PageContext
+    - page: Object
+    - exception
+- JSP directives
+    - page directive
+        - import
+        - contentType
+        - extends
+        - info
+        - buffer
+        - language
+        - isELIgnored
+        - isThreadSafe
+        - autoFlush
+        - session
+        - pageEncoding
+        - errorPage
+        - isErrorPage
+    - include directive
+    - taglib directive
+- Exception handling
+    - By errorPage and isErrorPage attributes of page directive
+    - By `<error-page>` element in web.xml file
+- JSP Actions
+    - `jsp:forward` : forwards the request and response to another resource.
+    - `jsp:include` : includes another resource.
+    - `jsp:useBean` : creates or locates bean object.
+    - `jsp:setProperty`: sets the value of property in bean object.
+    - `jsp:getProperty`: prints the value of property of the bean.
+    - `jsp:plugin`: embeds another components such as applet.
+    - `jsp:param`: sets the parameter value. It is used in forward and include mostly.
+    - `jsp:fallback`: can be used to print the message if plugin is working. It is used in jsp:plugin.
+
+
+## Expression Language
+- Ref: https://www.javatpoint.com/EL-expression-in-jsp
+- pageScope:
+    - it maps the given attribute name with the value set in the page scope
+- requestScope:
+    - it maps the given attribute name with the value set in the request scope
+- sessionScope:
+    - it maps the given attribute name with the value set in the session scope
+- applicationScope:
+    - it maps the given attribute name with the value set in the application scope
+- param:
+    - it maps the request parameter to the single value
+- paramValues:
+    - it maps the request parameter to an array of values
+- header:
+    - it maps the request header name to the single value
+- headerValues:
+    - it maps the request header name to an array of values
+- cookie:
+    - it maps the given cookie name to the cookie value
+- initParam:
+    - it maps the initialization parameter
+- pageContext:
+    - it provides access to many objects request, session etc.
+
+## JSTL
+- https://www.javatpoint.com/jstl-core-tags
+- Core tags:
+    - The JSTL core tag provide variable support, URL management, flow control, etc. The URL for the core tag is http://java.sun.com/jsp/jstl/core. The prefix of core tag is c.
+    - Content: https://www.javatpoint.com/jstl-core-tags
+- Function tags:
+    - The functions tags provide support for string manipulation and string length. The URL for the functions tags is http://java.sun.com/jsp/jstl/functions and prefix is fn.
+    - Content: https://www.javatpoint.com/jstl-formatting-tags
+- XML tags:
+    - The XML tags provide flow control, transformation, etc. The URL for the XML tags is http://java.sun.com/jsp/jstl/xml and prefix is x.
+    - Content: https://www.javatpoint.com/jstl-xml-tags
+- SQL tags
+    - The JSTL SQL tags provide SQL support. The URL for the SQL tags is http://java.sun.com/jsp/jstl/sql and prefix is sql.
+    - Content: https://www.javatpoint.com/jstl-sql-tags

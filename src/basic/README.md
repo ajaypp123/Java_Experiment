@@ -33,18 +33,3 @@ JAVA_HOME="/usr/lib/jvm/jdk-11.0.8+10"
 
 ## Java Project Structure
 http://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html
-
-## Java Library
-
-- Core Java
-- Maven
-    - Java App (maven-archetype-quickstart)
-    - servlet/jsp/JSTL (JSP Standard Tag Library) (maven-archetype-webapp)
-    - mvc jsp (maven-archetype-mvc-1.0-blank)
-    - Hibernet (WIP)
-    - Spring (WIP)
-    - CLI (WIP)
-    - REST (WIP) (Spring)
-
-# Keyword
--  IOC, AOP, DAO, Context, ORM, WEB MVC, POJO

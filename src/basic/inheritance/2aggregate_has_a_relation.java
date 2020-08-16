@@ -1,0 +1,1 @@
+//access one class data in other class by creating obj of that class
